@@ -6,20 +6,5 @@ This is a standalone [Stencil Web Component](https://stenciljs.com/docs/my-first
 
 ## Using this component
 
-There are three strategies:
-
-**Script tag**
-
-- Put a script tag `<script type="module" src="https://unpkg.com/github-button@0.0.1/dist/github-button/github-button.esm.js"></script>` in the head of your `index.html`
-
-**Node Modules**
-
-- Run `npm i github-button`
-- Put a script tag similar to this `<script type='module' src='node_modules/github-button/dist/github-button.esm.js'></script>` in the head of your `index.html`
-
-**In a stencil-starter app**
-
-- Run `npm i github-button`
-- Add an import to the npm packages `import github-button`
-
-Then you can use `<github-button user="user" repo="repo"></github-button>` anywhere in your template, JSX, html etc
+- Put a script tag `<script type="module" src="https://unpkg.com/github-button@0.0.1/dist/github-button/github-button.esm.js"></script>` in the head of `index.html`
+- Use `<github-button user="user" repo="repo"></github-button>` anywhere in template, JSX, html etc
