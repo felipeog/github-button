@@ -1,0 +1,30 @@
+.wrapper {
+  padding: 4px;
+  border-radius: 50%;
+  opacity: 0.5;
+  transition: 100ms;
+  position: absolute;
+  top: 8px;
+  right: 8px;
+}
+
+.wrapper:hover {
+  opacity: 1;
+}
+
+.light {
+  background-color: #fff;
+}
+
+.dark {
+  background-color: #24292f;
+}
+
+.link {
+  text-decoration: none;
+}
+
+.logo {
+  display: block;
+  width: 100%;
+}

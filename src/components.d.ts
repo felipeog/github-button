@@ -6,56 +6,40 @@
  */
 import { HTMLStencilElement, JSXBase } from "@stencil/core/internal";
 export namespace Components {
-    interface MyComponent {
-        /**
-          * The first name
-         */
-        "first": string;
-        /**
-          * The last name
-         */
-        "last": string;
-        /**
-          * The middle name
-         */
-        "middle": string;
+    interface GithubButton {
+        "repo": string;
+        "theme": 'light' | 'dark';
+        "user": string;
+        "width": string;
     }
 }
 declare global {
-    interface HTMLMyComponentElement extends Components.MyComponent, HTMLStencilElement {
+    interface HTMLGithubButtonElement extends Components.GithubButton, HTMLStencilElement {
     }
-    var HTMLMyComponentElement: {
-        prototype: HTMLMyComponentElement;
-        new (): HTMLMyComponentElement;
+    var HTMLGithubButtonElement: {
+        prototype: HTMLGithubButtonElement;
+        new (): HTMLGithubButtonElement;
     };
     interface HTMLElementTagNameMap {
-        "my-component": HTMLMyComponentElement;
+        "github-button": HTMLGithubButtonElement;
     }
 }
 declare namespace LocalJSX {
-    interface MyComponent {
-        /**
-          * The first name
-         */
-        "first"?: string;
-        /**
-          * The last name
-         */
-        "last"?: string;
-        /**
-          * The middle name
-         */
-        "middle"?: string;
+    interface GithubButton {
+        "repo": string;
+        "theme"?: 'light' | 'dark';
+        "user": string;
+        "width"?: string;
     }
     interface IntrinsicElements {
-        "my-component": MyComponent;
+        "github-button": GithubButton;
     }
 }
 export { LocalJSX as JSX };
 declare module "@stencil/core" {
     export namespace JSX {
         interface IntrinsicElements {
-            "my-component": LocalJSX.MyComponent & JSXBase.HTMLAttributes<HTMLMyComponentElement>;
+            "github-button": LocalJSX.GithubButton & JSXBase.HTMLAttributes<HTMLGithubButtonElement>;
         }
     }
 }
