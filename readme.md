@@ -9,5 +9,5 @@ A GitHub button that opens a repository on a new tab. It's positioned at the vie
 ## Using this component
 
 - [Properties](/src/components/github-button/readme.md)
-- Put a script tag `<script type="module" src="https://unpkg.com/github-button@0.0.1/dist/github-button/github-button.esm.js"></script>` in the head of `index.html`
+- Put a script tag `<script type="module" src="https://unpkg.com/github-button@latest/dist/github-button/github-button.esm.js"></script>` in the head of `index.html`
 - Use `<github-button user="user" repo="repo"></github-button>` anywhere in template, JSX, html etc
