@@ -7,12 +7,12 @@
 
 ## Properties
 
-| Property            | Attribute | Description | Type                | Default     |
-| ------------------- | --------- | ----------- | ------------------- | ----------- |
-| `repo` _(required)_ | `repo`    |             | `string`            | `undefined` |
-| `theme`             | `theme`   |             | `"dark" \| "light"` | `undefined` |
-| `user` _(required)_ | `user`    |             | `string`            | `undefined` |
-| `width`             | `width`   |             | `string`            | `undefined` |
+| Property            | Attribute | Description  | Type                | Default     |
+| ------------------- | --------- | ------------ | ------------------- | ----------- |
+| `repo` _(required)_ | `repo`    | Repo's name  | `string`            | `undefined` |
+| `theme`             | `theme`   | Theme        | `"dark" \| "light"` | `'light'`   |
+| `user` _(required)_ | `user`    | Repo's owner | `string`            | `undefined` |
+| `width`             | `width`   | Width        | `string`            | `'24px'`    |
 
 
 ----------------------------------------------

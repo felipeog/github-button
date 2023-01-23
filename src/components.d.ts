@@ -7,9 +7,21 @@
 import { HTMLStencilElement, JSXBase } from "@stencil/core/internal";
 export namespace Components {
     interface GithubButton {
+        /**
+          * Repo's name
+         */
         "repo": string;
+        /**
+          * Theme
+         */
         "theme": 'light' | 'dark';
+        /**
+          * Repo's owner
+         */
         "user": string;
+        /**
+          * Width
+         */
         "width": string;
     }
 }
@@ -26,9 +38,21 @@ declare global {
 }
 declare namespace LocalJSX {
     interface GithubButton {
+        /**
+          * Repo's name
+         */
         "repo": string;
+        /**
+          * Theme
+         */
         "theme"?: 'light' | 'dark';
+        /**
+          * Repo's owner
+         */
         "user": string;
+        /**
+          * Width
+         */
         "width"?: string;
     }
     interface IntrinsicElements {
